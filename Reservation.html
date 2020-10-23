@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../CSS/general.css" />
+        <link rel="stylesheet" href="../CSS/reservation.css" />
+         
+        <title>Contact et réservation</title>     
+    </head>
+ 
+    <body>
+        <section>    
+            <form method="post" action="envoyer.php">
+                <div id="reservation">
+                    <fieldset>
+                        <legend>Formulaire de réservation</legend>
+                            <p>
+                                Vous souhaitez réserver :
+                                <input type="radio" name="Type_location" value="Une table" id="Une_table" /> <label for="Une_table">Une table</label>
+                                <input type="radio" name="Type_location" value="Deux tables" id="Deux_tables" /> <label for="Deux_tables">Deux tables (maxi)</label>
+                            </p>
+                            <p>
+                                Quel térasse préférez-vous?
+                                <input type="radio" name="Type_terasse" value="terasse Nord" id="terasse_Nord" /> <label for="terasse_Nord">térasse Nord</label>
+                                <input type="radio" name="Type_terasse" value="terasse Sud" id="terasse_Sud" /> <label for="terasse_Sud">térasse Sud</label>
+                            </p>
+                            <p>
+                                <label for="jour_arrivee">Jour d'arrivée :</label>
+                                <select name="jour" id="jour">
+                                    <option min="1">1</option>
+                                    <option max="2">2</option>
+                                    <option min="3">3</option>
+                                    <option max="4">4</option>
+                                    <option min="5">5</option>
+                                    <option max="6">6</option>
+                                    <option min="7">7</option>
+                                    <option max="8">8</option>
+                                    <option min="9">9</option>
+                                    <option max="10">10</option>
+                                    <option min="11">11</option>
+                                    <option max="12">12</option>
+                                    <option min="13">13</option>
+                                    <option max="14">14</option>
+                                    <option min="15">15</option>
+                                    <option max="16">16</option>
+                                    <option min="17">17</option>
+                                    <option max="18">18</option>
+                                    <option min="19">19</option>
+                                    <option max="20">20</option>
+                                    <option min="21">21</option>
+                                    <option max="22">22</option>
+                                    <option min="23">23</option>
+                                    <option max="24">24</option>
+                                    <option min="25">25</option>
+                                    <option max="26">26</option>
+                                    <option min="27">27</option>
+                                    <option max="28">28</option>
+                                    <option min="29">29</option>
+                                    <option max="30">30</option>
+                                    <option min="31">31</option>
+                                    
+                                </select>
+                                <select name="mois" id="mois">
+                                    <option value="Janvier">Janvier</option>
+                                    <option value="Fevrier">Fevrier</option>
+                                    <option value="Mars">Mars</option>
+                                    <option value="Avril">Avril</option>
+                                    <option value="Mai">Mai</option>
+                                    <option value="Juin">Juin</option>
+                                    <option value="Juillet">Juillet</option>
+                                    <option value="Aout">Août</option>
+                                    <option value="Septembre">Septembre</option>
+                                    <option value="Octobre">Octobre</option>
+                                    <option value="Novembre">Novembre</option>
+                                    <option value="Decembre">Decembre</option>
+                                </select>
+                                <select name="annee" id="annee">
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                </select>
+                            </p>         
+                    </fieldset>  
+                </div>
+                <div id="coordonnees">
+                    <fieldset>
+                        <legend>Vos coordonnées</legend>
+                            <p>
+                                <label for="Nom">Votre nom* :</label> <br />
+                                <input type="text" name="Nom" id="Nom" size="30" required />
+                            </p>
+                            <p>
+                                <label for="Prenom">Votre prénom* :</label> <br />
+                                <input type="text" name="Prenom" id="Prenom" size="30" required />
+                            </p>
+                            <p>
+                                <label for="Adresse">Adresse* :</label> <br />
+                                <textarea name="Adresse" id="Adresse" rows="3" cols="25" required ></textarea>
+                            </p>
+                            <p>
+                                <label for="Code_postal">Code postal* :</label> <br />
+                                <input type="text" name="Code_postal" id="Code_postal" size="15" required />
+                            </p>
+                            <p>
+                                <label for="Ville">Ville* :</label> <br />
+                                <input type="text" name="Ville" id="Ville" size="25" required />
+                            </p>
+                            <p>
+                                <label for="E_mail">E-mail* :</label> <br />
+                                <input type="E_mail" name="E_mail" id="E_mail" size="40" required />
+                            </p>
+                            <p>
+                                <label for="Telephone">Téléphone* :</label> <br />
+                                <input type="tel" name="Telephone" id="Telephone" placeholder="00 00 00 00 00" size="20" required />
+                            </p>
+                    </fieldset>
+                </div>
+                <input type="submit" value="Envoyer le message" />
+            </form>      
+        </section>
+    </body>
+</html>
