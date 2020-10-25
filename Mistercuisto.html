@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Recettes</title>
+  <title>Mistercuisto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1.0" />
   <link rel="stylesheet" href="Mistercuisto.css" />
@@ -15,23 +16,26 @@
     <h1><a href="Reservation.html">Reservez !</a></h1>
   </div>
 
-  <ul>
-    <li><a href="Mistercuisto.html">Acceuil</a></li>
-    <li><a href="Recette.html">La carte</a></li>
-    <li><a href="#nosvaleur">Nos valeurs</a></li>
-    <li><a href="#livredor">Livre d'Or</a></li>
-  </ul>
+  <div class="navigation">
+    <ul>
+      <li><a href="Mistercuisto.html">Acceuil</a></li>
+      <li><a href="Recette.html">La carte</a></li>
+      <li><a href="#nosvaleur">Nos valeurs</a></li>
+      <li><a href="#livredor">Livre d'Or</a></li>
+    </ul>
+  </div>
 
 
 
-  <p class="repa">
-    Nos Recettes :<br />
+  <h1><strong>Recettes:</strong></h1><br />
+  <div class="slider">
+    <div class=slides>
+      <div class="slide"><a href="#pouletroti"><img src="image/Photo 1.jpg"></a></div>
+      <div class="slide"><a href="#collindAlaska"><img src="image/Photo 2.jpeg"></a></div>
+      <div class="slide"><a href="#poulet"><img src="image/photo 3.jpeg"></a></div>
+    </div>
+  </div>
 
-    <a href="#pouletroti"><img src="image/Photo 1.jpg"></a><br />
-    <a href="#collindAlaska"><img src="image/Photo 2.jpeg"></a><br />
-    <a href="#poulet"><img src="image/photo 3.jpeg"></a><br />
-
-  </p>
 
 
   <div id="heur">Horaires:</br>
@@ -54,8 +58,16 @@
         })();</script><a href="https://1map.com/fr/map-embed">1 Map</a>
     </div>
   </div>
-
-  
+  <div id="chef">
+    <img src="image/cuisto.jpg" alt="cuisto">
+    <h1><strong>Notre chef Kofi Cook</strong></h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.</br>
+      Natus animi ea, molestiae ipsum eaque, ipsam ab exercitationem cupiditate architecto iure quidem.</br>
+      Eius, incidunt hic.</br>
+      Mollitia recusandae facere dolore impedit placeat?
+    </p>
+  </div>
 
   <!-- Footer Start -->
   <div class="footer">
@@ -96,10 +108,10 @@
   <!-- Footer End -->
 
   <script>
-     alert("Pour raison de couvre feux notre resteaux ferme à 21h")
-     prompt("laissez nous un petit avis")
+    alert("Pour raison de couvre feux notre resteaux ferme à 21h")
+    prompt("laissez nous un petit avis")
   </script>
-  
+
 </body>
 
 </html>
