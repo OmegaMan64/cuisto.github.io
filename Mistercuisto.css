@@ -2,6 +2,10 @@ body
 {background-color: brown;
 font-family: 'Montserrat', sans-serif; }
 
+.titre {
+color: #fff;
+background-color: #333;
+}
 .slide {
    float: left;
   
@@ -44,7 +48,7 @@ font-family: 'Montserrat', sans-serif; }
 div#titre {
     color: white;
     text-align: center;
-    background-image: url(image/photo4.jpg); height: 100px; 
+    background-image: url(image/photo4.jpg); height: 120px; 
 }
 
 
@@ -135,6 +139,7 @@ li {
       #Recette {
         display: flex;
         justify-content: space-between;
+        
       }
 
       #prepa  {
@@ -248,7 +253,7 @@ li {
         color: white;
     }
     
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1210px) {
         .footer-section {
             width: 33%;
         }
@@ -262,13 +267,20 @@ li {
             margin: 5px 2px;
             border-radius: 50%;
         }
+        #Recette {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+      }
     }
-    
+    /*footer responsive*/
+
     @media screen and (max-width:560px) {
         .footer-section {
             width: 33%;
         }
 
+  /*barre de nav responsive*/
     
        .navigation{
          position: fixed;
@@ -276,7 +288,7 @@ li {
          padding: 0 30px;
          background: #333;
          width: 20%;
-         
+         line-height: 60px;
        }
         
        .navigation ul{
@@ -284,7 +296,8 @@ li {
          top: 50%;
          transform: translateY(-50%);
          -webkit-transform: translateY(-50%);
-
+         line-height: 60px;
+    
        }
 
        .navigation ul li{
@@ -297,6 +310,12 @@ li {
         text-decoration: none;
         font-size: 20px;
         font-weight: 800;
-        letter-spacing: .070em;
-        
+        letter-spacing: .070em; 
       }
+      #Recette {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+  }
+
