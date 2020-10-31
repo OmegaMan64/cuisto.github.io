@@ -2,10 +2,15 @@ body
 {background-color: brown;
 font-family: 'Montserrat', sans-serif; }
 
+marquee
+{background-color: white;
+color: red;
+    }
+
 div#titre {
     color: white;
     text-align: center;
-    background-image: url(image/photo4.jpg); height: 120px; 
+    background-image: url(image/photo4.jpg); height: 500px; 
 }
 
 

@@ -2,11 +2,25 @@ body
 {background-color: brown;
 font-family: 'Montserrat', sans-serif; }
 
-div#titre {
+marquee
+{background-color: white;
+color: red;
+    }
+
+#titre {
     color: white;
     text-align: center;
-    background-image: url(image/photo4.jpg); height: 120px; 
+    background-image: url(image/photo4.jpg); height: 500px; 
 }
+
+.titre{
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 250px;
+  }
 
 
 div#Reserve {
@@ -114,6 +128,7 @@ li {
     
     .booking-form .form-header {
         text-align: center;
+        margin-left: 40px;
         margin-bottom: 25px;
         margin-top: 25px;
         display: flex;

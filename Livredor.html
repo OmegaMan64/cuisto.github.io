@@ -27,51 +27,77 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-    
-        
-    
-        <div id="booking" class="section">
-            <div class="section-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="booking-form">
-                            <div class="form-header">
-                                <h1>Livre d'or</h1>
-                            </div>
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <span class="form-label">Nom et Prenom</span>
-                                            <input class="form-control" type="text" required placeholder="Ex: Jim NID">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <span class="form-label">E-mail</span>
-                                            <input class="form-control" type="email"required placeholder="example@gmail.com">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <span class="form-label">Votre message</span>
-                                            <textarea class="form-control" type="textarea" required placeholder="J'aime l'ambience de ce resto" rows="4"></textarea>
-                                            <span class="select-arrow"></span>
-                                        </div>
-                                    </div>    
-                                </div>
-                                <div class="form-btn">
-                                    <button class="submit-btn">Check availability</button>
-                                    <input class="reset" type="reset" value="Reset">
-                                </div>
-                            </form>
+
+    <marquee><img src="image/danger.png"><strong>Suite au confinement notre restaurant est fermé jusqu'à 29
+            Novembre</strong> <img src="image/danger.png"></marquee>
+
+    <div id="booking" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="booking-form">
+                        <div class="form-header">
+                            <h1>Livre d'or</h1>
                         </div>
+                        <form action="addcomment.php" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="form-label">Nom et Prenom</span>
+                                        <input class="form-control" type="text" name="name" required
+                                            placeholder="Ex: Jim NID">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="form-label">E-mail</span>
+                                        <input class="form-control" type="email" name="email" required
+                                            placeholder="example@gmail.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <span class="form-label">Votre message</span>
+                                        <textarea class="form-control" type="textarea" name="message" required
+                                            placeholder="J'aime l'ambience de ce resto" rows="4"></textarea>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-btn">
+                                <button class="submit-btn">Validez</button>
+                                <input class="reset" type="reset" value="Reset">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <script>
+        function Validate() {
+            var x = document.forms["guest"]["email"].value;
+            var y = document.forms["guest"]["name"].value;
+            if (y == null || y == "") {
+                alert("Please enter your Name! ");
+                return false;
+            }
+            if (x == null || x == "") {
+                alert("Please enter your email address!");
+                return false;
+            }
+            var atpos = x.indexOf("@");
+            var dotpos = x.lastIndexOf(".");
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+                alert("Not a valid e-mail address");
+                return false;
+            }
+            else
+                return true;
+        }
+    </script>
 
 
     <!-- Footer Start -->
